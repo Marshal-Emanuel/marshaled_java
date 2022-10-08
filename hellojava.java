@@ -1,4 +1,4 @@
-class hellojava{
+class Hellojava{
 
 public static void main(String[] args){
 
