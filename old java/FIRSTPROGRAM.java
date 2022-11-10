@@ -1,6 +1,6 @@
 import java.util.Scanner; //to be able to use scanner
 			  //predefined function for input
-public class Main{
+public class main{
 	public static void main(String[] args){
 		Scanner input=new Scanner(System.in); //input is an object and you 
 						      //can choose your own too.
@@ -9,7 +9,7 @@ public class Main{
 	        System.out.println("Enter a number and i will echo it later: ");
 		
 		num1=input.nextInt(); //read input for num1
-		Sytem.out.println("Enter a word and I will echo it later: ");
+		System.out.println("Enter a word and I will echo it later: ");
 		word1=input.next(); //read input for word1
 		System.out.println("Here is the echo of what you have entered:");
 		System.out.println("The number you have entered is: " + num1); //echoing input to num1
