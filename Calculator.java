@@ -90,7 +90,7 @@ public class Calculator {
         }
 
         else{
-            Sytem.out.println("Wrong operation chosen!. Please try again later! ");
+            System.out.println("Wrong operation chosen!. Please try again later! ");
 
             }
 
