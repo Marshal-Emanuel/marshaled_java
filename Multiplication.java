@@ -16,4 +16,5 @@ public class Multiplication{
         }   
         scan.close();     
     }
+    
 }

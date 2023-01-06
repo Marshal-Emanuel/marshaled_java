@@ -267,25 +267,303 @@ public class Bills{
             }
             else{System.out.println("Invalid Entry, Please try again!");}
         }
+        //Lunch
         else if(time==2){
             System.out.println("|_________________________________________________________________\n|");
             System.out.println("|--------  You have selected the Lunch menu  ----------");
             System.out.println("|       The following meals are available for Lunch today!:)");
 
-            System.out.print("|-->1:Rice and Beef stew(with greens)~~~~60$\n|\n|---->2:French Fries and Chicken(1/4)~~~~70$\n|\n|------>3:CHpati and Cereals<beans, cowpeas>(with veggies)~~~~60$\n|\n|-------->4:Ugali and Fried fish(Tilapia)~~~~90$\n|\n|\n|");
+            System.out.print("|-->1:Rice and Beef stew(with greens)~~~~60$\n|\n|---->2:French Fries and Chicken(1/4)~~~~70$\n|\n|------>3:Chapati and Cereals<beans, cowpeas>(with veggies)~~~~60$\n|\n|-------->4:Ugali and Fried fish(Tilapia)~~~~90$\n|\n|\n|");
             scan.nextLine();
             int food=scan.nextInt();
             
+            //Rice Beef stew
             if(food==1){
-                System.out.println("|_________________________________________________________________\n|");
-                System.out.println("|You have selected Rice and Beef stew(with greens)\n|\n| Please enter the number of plates as we prepare the delight :)");
+            System.out.println("|_________________________________________________________________\n|");
+                System.out.println("|      You have selected Rice and Beef stew(with greens)\n|\n|    Please enter the number of plates as we prepare the delight :)");
                 int plates=scan.nextInt();
                 System.out.printf("|%d plate(s) will be served in a short time\n|\n| Would you like to have a drink with the meal? Yes/No\n", plates);
 
+
                 scan.nextLine();
+                String decide=scan.nextLine();
+
+                if(decide.equalsIgnoreCase("yes")){
+                    System.out.println("|_________________________________________________________________\n|");
+                    System.out.println("|The folowing drinks are in available today. Please select the desired drink :)");
+                    System.out.println("|1.Cocktail ~~~~~~~~25$\n|2.Mango Juice~~~~~~~~~~~~~20$\n|3.Mixed fruit Juice~~~~~~~~~~~~~~~~~~25$");
+
+                    int drink=scan.nextInt();
+                    
+                    //Cocktail
+                    if(drink==1){
+                        System.out.println("|_________________________________________________________________");
+                        System.out.println("|You have chosen Cocktail for your drink \n|How many glasses should we serve?");
+
+                        int glasses=scan.nextInt();
+
+                        System.out.println("|Thank you for eating with us :)! Relax as we prepare the meal.\n|");
+                        
+                        
+                        int bills=plates*60+glasses*25;
+                       System.out.printf("|Your bill is as follows:\n| %d$ for your food \n|%d$ for the drink\n|~~which sum up as %d $\n|\n|We hope you enjoy your meal:) Come one ,come all! :) \n|          ~`Billie Hotel`~\n", plates*60, glasses*15, bills);
+                    }
+
+                    //Mango Juice
+                    else if(drink==2){
+                        System.out.println("|_________________________________________________________________");
+                        System.out.println("|You have chosen Mango Juice for your drink \n|How many glasses should we serve?");
+
+                        int glasses=scan.nextInt();
+
+                        System.out.println("|Thank you for eating with us :)! Relax as we prepare the meal.\n|");
+                        
+                        
+                        int bills=plates*60+glasses*20;
+                       System.out.printf("|Your bill is as follows:\n| %d$ for your food \n|%d$ for the drink\n|~~which sum up as %d $\n|\n|We hope you enjoy your meal:) Come one ,come all! :) \n|          ~`Billie Hotel`~\n", plates*60, glasses*20, bills);
+                    }
+
+                    //Mixed Fruit Juice
+                    else if(drink==3){
+                        System.out.println("|_________________________________________________________________");
+                        System.out.println("|You have chosen Mixed Fruit Juice for your drink \n|How many glasses should we serve?");
+
+                        int glasses=scan.nextInt();
+
+                        System.out.println("|Thank you for eating with us :)! Relax as we prepare the meal.\n|");
+                        
+                        
+                        int bills=plates*60+glasses*25;
+                       System.out.printf("|Your bill is as follows:\n| %d$ for your food \n|%d$ for the drink\n|~~which sum up as %d $\n|\n|We hope you enjoy your meal:) Come one ,come all! :) \n|          ~`Billie Hotel`~\n", plates*60, glasses*15, bills);
+                    }
+                    else{
+                        System.out.println("Invalid entry :( Please try again!");
+                    }
+                }
+                else{
+                    System.out.printf("\n|Noted!\n|Your bill is as follows:\n| %d$ for your Food \n|\n|We hope you enjoy your meal:) Come one ,come all! :)\n|          ~`Billie Hotel`~\n", plates*60);
+                    System.out.println("|_________________________________________________________________");
+                
+                }
+            }
+
+            //French Fries and chicken
+            else if(food==2){
+            System.out.println("|_________________________________________________________________\n|");
+                System.out.println("|      You have selected French Fries and Chicken\n|\n|    Please enter the number of plates as we prepare the delight :)");
+                int plates=scan.nextInt();
+                System.out.printf("|%d plate(s) will be served in a short time\n|\n| Would you like to have a drink with the meal? Yes/No\n", plates);
+
+
+                scan.nextLine();
+                String decide=scan.nextLine();
+
+                if(decide.equalsIgnoreCase("yes")){
+                    System.out.println("|_________________________________________________________________\n|");
+                    System.out.println("|The folowing drinks are in available today. Please select the desired drink :)");
+                    System.out.println("|1.Cocktail ~~~~~~~~25$\n|2.Mango Juice~~~~~~~~~~~~~20$\n|3.Mixed fruit Juice~~~~~~~~~~~~~~~~~~25$");
+
+                    int drink=scan.nextInt();
+                    
+                    //Cocktail
+                    if(drink==1){
+                        System.out.println("|_________________________________________________________________");
+                        System.out.println("|You have chosen Cocktail for your drink \n|How many glasses should we serve?");
+
+                        int glasses=scan.nextInt();
+
+                        System.out.println("|Thank you for eating with us :)! Relax as we prepare the meal.\n|");
+                        
+                        
+                        int bills=plates*60+glasses*25;
+                       System.out.printf("|Your bill is as follows:\n| %d$ for your food \n|%d$ for the drink\n|~~which sum up as %d $\n|\n|We hope you enjoy your meal:) Come one ,come all! :) \n|          ~`Billie Hotel`~\n", plates*70, glasses*15, bills);
+                    }
+
+                    //Mango Juice
+                    else if(drink==2){
+                        System.out.println("|_________________________________________________________________");
+                        System.out.println("|You have chosen Mango Juice for your drink \n|How many glasses should we serve?");
+
+                        int glasses=scan.nextInt();
+
+                        System.out.println("|Thank you for eating with us :)! Relax as we prepare the meal.\n|");
+                        
+                        
+                        int bills=plates*60+glasses*20;
+                       System.out.printf("|Your bill is as follows:\n| %d$ for your food \n|%d$ for the drink\n|~~which sum up as %d $\n|\n|We hope you enjoy your meal:) Come one ,come all! :) \n|          ~`Billie Hotel`~\n", plates*70, glasses*20, bills);
+                    }
+
+                    //Mixed Fruit Juice
+                    else if(drink==3){
+                        System.out.println("|_________________________________________________________________");
+                        System.out.println("|You have chosen Mixed Fruit Juice for your drink \n|How many glasses should we serve?");
+
+                        int glasses=scan.nextInt();
+
+                        System.out.println("|Thank you for eating with us :)! Relax as we prepare the meal.\n|");
+                        
+                        
+                        int bills=plates*60+glasses*25;
+                       System.out.printf("|Your bill is as follows:\n| %d$ for your food \n|%d$ for the drink\n|~~which sum up as %d $\n|\n|We hope you enjoy your meal:) Come one ,come all! :) \n|          ~`Billie Hotel`~\n", plates*70, glasses*15, bills);
+                    }
+                    else{
+                        System.out.println("Invalid entry :( Please try again!");
+                    }
+                }
+                else{
+                    System.out.printf("\n|Noted!\n|Your bill is as follows:\n| %d$ for your Food \n|\n|We hope you enjoy your meal:) Come one ,come all! :)\n|          ~`Billie Hotel`~\n", plates*70);
+                    System.out.println("|_________________________________________________________________");
+                
+                }
+            }
+
+            //Chapati with cereal
+            else if(food==3){
+            System.out.println("|_________________________________________________________________\n|");
+                System.out.println("|      You have selected Chapati with Cereal\n|\n|    Please enter the number of plates as we prepare the delight :)");
+                int plates=scan.nextInt();
+                System.out.printf("|%d plate(s) will be served in a short time\n|\n| Would you like to have a drink with the meal? Yes/No\n", plates);
+
+
+                scan.nextLine();
+                String decide=scan.nextLine();
+
+                if(decide.equalsIgnoreCase("yes")){
+                    System.out.println("|_________________________________________________________________\n|");
+                    System.out.println("|The folowing drinks are in available today. Please select the desired drink :)");
+                    System.out.println("|1.Cocktail ~~~~~~~~25$\n|2.Mango Juice~~~~~~~~~~~~~20$\n|3.Mixed fruit Juice~~~~~~~~~~~~~~~~~~25$");
+
+                    int drink=scan.nextInt();
+                    
+                    //Cocktail
+                    if(drink==1){
+                        System.out.println("|_________________________________________________________________");
+                        System.out.println("|You have chosen Cocktail for your drink \n|How many glasses should we serve?");
+
+                        int glasses=scan.nextInt();
+
+                        System.out.println("|Thank you for eating with us :)! Relax as we prepare the meal.\n|");
+                        
+                        
+                        int bills=plates*60+glasses*25;
+                       System.out.printf("|Your bill is as follows:\n| %d$ for your food \n|%d$ for the drink\n|~~which sum up as %d $\n|\n|We hope you enjoy your meal:) Come one ,come all! :) \n|          ~`Billie Hotel`~\n", plates*60, glasses*15, bills);
+                    }
+
+                    //Mango Juice
+                    else if(drink==2){
+                        System.out.println("|_________________________________________________________________");
+                        System.out.println("|You have chosen Mango Juice for your drink \n|How many glasses should we serve?");
+
+                        int glasses=scan.nextInt();
+
+                        System.out.println("|Thank you for eating with us :)! Relax as we prepare the meal.\n|");
+                        
+                        
+                        int bills=plates*60+glasses*20;
+                       System.out.printf("|Your bill is as follows:\n| %d$ for your food \n|%d$ for the drink\n|~~which sum up as %d $\n|\n|We hope you enjoy your meal:) Come one ,come all! :) \n|          ~`Billie Hotel`~\n", plates*60, glasses*20, bills);
+                    }
+
+                    //Mixed Fruit Juice
+                    else if(drink==3){
+                        System.out.println("|_________________________________________________________________");
+                        System.out.println("|You have chosen Mixed Fruit Juice for your drink \n|How many glasses should we serve?");
+
+                        int glasses=scan.nextInt();
+
+                        System.out.println("|Thank you for eating with us :)! Relax as we prepare the meal.\n|");
+                        
+                        
+                        int bills=plates*60+glasses*25;
+                       System.out.printf("|Your bill is as follows:\n| %d$ for your food \n|%d$ for the drink\n|~~which sum up as %d $\n|\n|We hope you enjoy your meal:) Come one ,come all! :) \n|          ~`Billie Hotel`~\n", plates*60, glasses*15, bills);
+                    }
+                    else{
+                        System.out.println("Invalid entry :( Please try again!");
+                    }
+                }
+                else{
+                    System.out.printf("\n|Noted!\n|Your bill is as follows:\n| %d$ for your Food \n|\n|We hope you enjoy your meal:) Come one ,come all! :)\n|          ~`Billie Hotel`~\n", plates*60);
+                    System.out.println("|_________________________________________________________________");
+                
+                }
+            }
+
+            //Ugali and fried Fish
+            else if(food==4){
+            System.out.println("|_________________________________________________________________\n|");
+                System.out.println("|      You have selected Ugali and fried Fish\n|\n|    Please enter the number of plates as we prepare the delight :)");
+                int plates=scan.nextInt();
+                System.out.printf("|%d plate(s) will be served in a short time\n|\n| Would you like to have a drink with the meal? Yes/No\n", plates);
+
+
+                scan.nextLine();
+                String decide=scan.nextLine();
+
+                if(decide.equalsIgnoreCase("yes")){
+                    System.out.println("|_________________________________________________________________\n|");
+                    System.out.println("|The folowing drinks are in available today. Please select the desired drink :)");
+                    System.out.println("|1.Cocktail ~~~~~~~~25$\n|2.Mango Juice~~~~~~~~~~~~~20$\n|3.Mixed fruit Juice~~~~~~~~~~~~~~~~~~25$");
+
+                    int drink=scan.nextInt();
+                    
+                    //Cocktail
+                    if(drink==1){
+                        System.out.println("|_________________________________________________________________");
+                        System.out.println("|You have chosen Cocktail for your drink \n|How many glasses should we serve?");
+
+                        int glasses=scan.nextInt();
+
+                        System.out.println("|Thank you for eating with us :)! Relax as we prepare the meal.\n|");
+                        
+                        
+                        int bills=plates*60+glasses*25;
+                       System.out.printf("|Your bill is as follows:\n| %d$ for your food \n|%d$ for the drink\n|~~which sum up as %d $\n|\n|We hope you enjoy your meal:) Come one ,come all! :) \n|          ~`Billie Hotel`~\n", plates*90, glasses*15, bills);
+                    }
+
+                    //Mango Juice
+                    else if(drink==2){
+                        System.out.println("|_________________________________________________________________");
+                        System.out.println("|You have chosen Mango Juice for your drink \n|How many glasses should we serve?");
+
+                        int glasses=scan.nextInt();
+
+                        System.out.println("|Thank you for eating with us :)! Relax as we prepare the meal.\n|");
+                        
+                        
+                        int bills=plates*60+glasses*20;
+                       System.out.printf("|Your bill is as follows:\n| %d$ for your food \n|%d$ for the drink\n|~~which sum up as %d $\n|\n|We hope you enjoy your meal:) Come one ,come all! :) \n|          ~`Billie Hotel`~\n", plates*90, glasses*20, bills);
+                    }
+
+                    //Mixed Fruit Juice
+                    else if(drink==3){
+                        System.out.println("|_________________________________________________________________");
+                        System.out.println("|You have chosen Mixed Fruit Juice for your drink \n|How many glasses should we serve?");
+
+                        int glasses=scan.nextInt();
+
+                        System.out.println("|Thank you for eating with us :)! Relax as we prepare the meal.\n|");
+                        
+                        
+                        int bills=plates*60+glasses*25;
+                       System.out.printf("|Your bill is as follows:\n| %d$ for your food \n|%d$ for the drink\n|~~which sum up as %d $\n|\n|We hope you enjoy your meal:) Come one ,come all! :) \n|          ~`Billie Hotel`~\n", plates*90, glasses*15, bills);
+                    }
+                    else{
+                        System.out.println("Invalid entry :( Please try again!");
+                    }
+                }
+                else{
+                    System.out.printf("\n|Noted!\n|Your bill is as follows:\n| %d$ for your Food \n|\n|We hope you enjoy your meal:) Come one ,come all! :)\n|          ~`Billie Hotel`~\n", plates*90);
+                    System.out.println("|_________________________________________________________________");
+                
+                }
+            }
+
+
+
+            
         }
         
         else{System.out.println("|\n|Invalid entry, please try again!\n");}
+        
         }
             
 }           

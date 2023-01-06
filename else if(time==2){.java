@@ -6,8 +6,9 @@ else if(time==2){
             System.out.print("|-->1:Rice and Beef stew(with greens)~~~~60$\n|\n|---->2:French Fries and Chicken(1/4)~~~~70$\n|\n|------>3:CHpati and Cereals<beans, cowpeas>(with veggies)~~~~60$\n|\n|-------->4:Ugali and Fried fish(Tilapia)~~~~90$\n|\n|\n|");
             scan.nextLine();
             int food=scan.nextInt();
-         /*   if(food==1){
-                System.out.println("|_________________________________________________________________\n|");
+
+
+             System.out.println("|_________________________________________________________________\n|");
                 System.out.println("|You have selected Rice and Beef stew(with greens)\n|\n| Please enter the number of plates as we prepare the delight :)");
                 int plates=scan.nextInt();
                 System.out.printf("|%d plate(s) will be served in a short time\n|\n| Would you like to have a drink with the meal? Yes/No\n", plates);
@@ -34,3 +35,42 @@ else if(time==2){
                         int bills=plates*60+glasses*25;
                        System.out.printf("|Your bill is as follows:\n| %d$ for your food \n|%d$ for the drink\n|~~which sum up as %d $\n|\n|We hope you enjoy your meal:) Come one ,come all! :) \n|          ~`Billie Hotel`~\n", plates*25, glasses*15, bills);
         }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*  Scanner scan=new Scanner(System.in);
+        System.out.println("Welcome to the mutiplication table program\nEnter the column range");
+        int number=scan.nextInt();
+        scan.nextLine();
+        System.out.println("Enter the row length:");
+        int multiplier=scan.nextInt();
+
+        for(int i=1; i<=number;i++){
+            for(int j=1; j<=multiplier;j++){
+                System.out.printf("|%d|\t", i*j);
+            }
+            System.out.println();
+        }   
+        scan.close();     
+    }*/
