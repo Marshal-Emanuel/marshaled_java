@@ -23,7 +23,7 @@ public class TestSendingWithSenderID {
 
 		/* Set the numbers you want to send to in international format */
 		String[] recipients = new String[] {
-			"+254711XXXYYY", "+254702XXXYYY"
+			+254714737836, +254714737836
 		};
 
 		/* Set your message */
