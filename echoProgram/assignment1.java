@@ -3,7 +3,7 @@ public class assignment1 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);//input is an object and you can choose your own too
 		int num1;//num1 is a variable of interger type you can change it 
-		String word1; //this is a varible of string type you can change it 
+		String word1; //this is a varible of string type you can change i
 		System.out.print("Enter a number and i will echo it later:");
 		num1 =input.nextInt();//reads input from num1
 		System.out.print("Enter a word and i will echo it later:");
