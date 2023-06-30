@@ -6,7 +6,7 @@ public class Diamond {
 		
 				Scanner input =new Scanner (System.in);
 				int num1;
-				System.out.println("Please enter the number to find the reculsive:");
+				System.out.println("Please e nter the number to find the reculsive:");
 				num1=input.nextInt();
 				System.out.println(Diamond_Asterisk(num1));
 				System.out.println(Diamond_Asterisk2(num1));
