@@ -11,7 +11,7 @@ public class Diamond {
 				System.out.println(Diamond_Asterisk(num1));
 				System.out.println(Diamond_Asterisk2(num1));
 				System.out.println(Space(num1));
-
+ 
 			}
 			public static String Diamond_Asterisk(int num)//method1
 			{
