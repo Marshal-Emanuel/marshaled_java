@@ -1,4 +1,4 @@
-package asterisk;          
+package asterisk;           
 import java.util.Scanner;
 public class Diamond {
 
