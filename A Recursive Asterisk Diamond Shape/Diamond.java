@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Diamond { 
 
 	public static void main(String[] args) {
-		
+		 
 				Scanner input =new Scanner (System.in);
 				int num1;
 				System.out.println("Please enter the number  to find the reculsive:");
