@@ -1,6 +1,6 @@
 public class IfelseIfelseExample {
 	 
-	public static void main(String[] args) { 
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub  
 		/*if else statement is used to execute multible of actions bassed uppon  
 		 * mu;tible conditions 
