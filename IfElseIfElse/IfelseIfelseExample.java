@@ -4,7 +4,7 @@ public class IfelseIfelseExample {
 		// TODO Auto-generated method stub  
 		/*if else statement is used to execute multible of actions bassed uppon 
 		 * mu;tible conditions 
-		 * syntax of if else if sataemant is 
+		 * syntax of if else if sataemant is  
 		 * 
 		 * if (<condition1>)
 		 * statement1
