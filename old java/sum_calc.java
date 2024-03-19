@@ -1,4 +1,4 @@
-import java.util.Scanner; 
+import java.util.Scanner;   
 class AddDigitsOfANumberClass{
 	public static void main(String[] args){
 		/* sum variable store sum of digits */
