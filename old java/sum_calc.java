@@ -5,7 +5,7 @@ class AddDigitsOfANumberClass{
 
 		/* last_digit variable contain last digit
 		of a number until loop termination */
-		int sum = 0,last_digit;
+		int sum = 0,last_digit; 
 
 
 		Scanner sc = new Scanner(System.in);
