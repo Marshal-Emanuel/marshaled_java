@@ -3,7 +3,7 @@ class AddDigitsOfANumberClass{
 	public static void main(String[] args){
 		/* sum variable store sum of digits */
 
-		/* last_digit variable contain last digit
+		/* last_digit variable contain last digits
 		of a number until loop termination */ 
 		int sum = 0,last_digit; 
 
