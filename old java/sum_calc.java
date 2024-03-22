@@ -4,7 +4,7 @@ class AddDigitsOfANumberClass{
 		/* sum variable store sum of digits */
 
 		/* last_digit variable contain last digits
-		of a number until loop termination */ 
+		of a number until loop termination */    
 		int sum = 0,last_digit; 
 
 
