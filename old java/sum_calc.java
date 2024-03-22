@@ -1,5 +1,5 @@
 import java.util.Scanner; 
-class AddDigitsOfANumberClass{
+class AddDigitsOfANumberClass{ 
 	public static void main(String[] args){
 		/* sum variable store sum of digits */
 
